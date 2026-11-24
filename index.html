@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>MIZAN SOLAR AND ELECTRONICS — Business Monitor</title>
+  <meta name="theme-color" content="#14532d">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Mizan Monitor">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">MIZAN SOLAR AND ELECTRONICS<small>Business Monitor</small></div>
+    <span class="offline-dot" id="netstate">Works offline</span>
+  </header>
+  <nav id="nav" aria-label="Main">
+    <a href="#/dashboard" data-r="dashboard">Home</a>
+    <a href="#/sales" data-r="sales">Sales</a>
+    <a href="#/inventory" data-r="inventory">Stock</a>
+    <a href="#/customers" data-r="customers">People</a>
+    <a href="#/expenses" data-r="expenses">Expense</a>
+    <a href="#/reports" data-r="reports">Reports</a>
+    <a href="#/backup" data-r="backup">Backup</a>
+  </nav>
+  <main id="view" tabindex="-1"><p class="empty">Loading…</p></main>
+  <dialog id="dlg"></dialog>
+  <div id="toast" class="hidden" role="status" aria-live="polite"></div>
+  <div id="print-area"></div>
+
+  <noscript><p style="padding:16px">Please enable JavaScript to use this app.</p></noscript>
+  <script src="js/utils.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/inventory.js"></script>
+  <script src="js/customers.js"></script>
+  <script src="js/sales.js"></script>
+  <script src="js/expenses.js"></script>
+  <script src="js/analytics.js"></script>
+  <script src="js/backup.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/views_dash.js"></script>
+  <script src="js/views_stock.js"></script>
+  <script src="js/views_sales.js"></script>
+  <script src="js/views_misc.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
